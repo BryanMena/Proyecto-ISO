@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".Administracion">
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+      <!-- Logo en la parte superior -->
+      <Button
+          android:id="@+id/logobtn"
+          android:layout_width="55dp"
+          android:layout_height="59dp"
+          android:layout_gravity="center"
+          android:layout_marginStart="16dp"
+          android:layout_marginTop="16dp"
+          android:layout_marginEnd="16dp"
+          android:layout_marginBottom="20dp"
+          android:foreground="@drawable/logo"
+          android:scaleType="fitCenter"
+
+          android:src="@drawable/logo"
+          app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias="0.0" />
+
+      <!-- Botones centrados en la misma línea -->
+
+      <!-- Título Misión -->
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:layout_marginTop="16dp"
+          android:gravity="center"
+          android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/misionbtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#000000"
+            android:text="@string/misi_n"
+            android:textColor="#ffffff" />
+
+
+        <Button
+            android:id="@+id/administracionbtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_weight="1"
+            android:backgroundTint="#ffffff"
+            android:text="Administración"
+            android:textColor="#000000" />
+      </LinearLayout>
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="24dp"
+          android:text="Administración"
+          android:textAlignment="center"
+          android:textSize="24sp"
+          android:textStyle="bold" />
+
+      <!-- Texto Misión -->
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="El Ministerio Movimiento Cristiano Final fue fundado por el Rev. Manuel A Bellorín el día 26 de Enero del año 1999, en la ciudad de Daly City California y sus primeros integrantes fueron: Miriam Morales, Jamilet Bellorín Mercedes Bellorín y Rosa Bellorín."
+          android:layout_marginTop="8dp"
+          android:justificationMode="inter_word" />
+
+      <!-- Título Nuestro Equipo de Trabajo -->
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="24dp"
+          android:text="Nuestro Equipo de Trabajo:"
+          android:textAlignment="center"
+          android:textSize="24sp"
+          android:textStyle="bold" />
+
+      <!-- Imagen 1 (Redonda) -->
+      <ImageView
+          android:id="@+id/imagen1"
+          android:layout_width="150dp"
+          android:layout_height="150dp"
+          android:layout_gravity="center_horizontal"
+          android:layout_marginTop="16dp"
+          android:src="@drawable/p1" />
+
+      <!-- Título Rev. Manuel Bellorín -->
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Rev. Manuel Bellorín"
+          android:textSize="20sp"
+          android:textStyle="bold"
+          android:layout_marginTop="8dp"
+          android:layout_gravity="center_horizontal" />
+
+      <!-- Texto Rev. Manuel Bellorín -->
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Fundador y Director de la organización Cristiana MCF-Ministery a nivel internacional."
+          android:textSize="16sp"
+          android:layout_marginTop="8dp"
+          android:gravity="center" />
+
+      <!-- Imagen 1 (Redonda) -->
+      <ImageView
+          android:id="@+id/imagen2"
+          android:layout_width="150dp"
+          android:layout_height="150dp"
+          android:layout_gravity="center_horizontal"
+          android:layout_marginTop="16dp"
+          android:src="@drawable/p2" />
+
+      <!-- Título Rev. Manuel Bellorín -->
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Emma Ramirez"
+          android:textSize="20sp"
+          android:textStyle="bold"
+          android:layout_marginTop="8dp"
+          android:layout_gravity="center_horizontal" />
+
+      <!-- Texto Rev. Manuel Bellorín -->
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Directora Ejecutiva en los Estados Unidos del Instituto Bíblico Unido virtual y correspondencia."
+          android:textSize="16sp"
+          android:layout_marginTop="8dp"
+          android:gravity="center" />
+
+      <!-- Imagen 1 (Redonda) -->
+      <ImageView
+          android:id="@+id/imagen3"
+          android:layout_width="150dp"
+          android:layout_height="150dp"
+          android:layout_gravity="center_horizontal"
+          android:layout_marginTop="16dp"
+          android:src="@drawable/p3" />
+
+      <!-- Título Rev. Manuel Bellorín -->
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Alba Luz Lopez"
+          android:textSize="20sp"
+          android:textStyle="bold"
+          android:layout_marginTop="8dp"
+          android:layout_gravity="center_horizontal" />
+
+      <!-- Texto Rev. Manuel Bellorín -->
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Vicepresidenta en Movimiento Cristiano Final Central."
+          android:textSize="16sp"
+          android:layout_marginTop="8dp"
+          android:gravity="center" />
+
+      <!-- Imagen 1 (Redonda) -->
+      <ImageView
+          android:id="@+id/imagen4"
+          android:layout_width="150dp"
+          android:layout_height="150dp"
+          android:layout_gravity="center_horizontal"
+          android:layout_marginTop="16dp"
+          android:src="@drawable/p4" />
+
+      <!-- Título Rev. Manuel Bellorín -->
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Caleb Lopez"
+          android:textSize="20sp"
+          android:textStyle="bold"
+          android:layout_marginTop="8dp"
+          android:layout_gravity="center_horizontal" />
+
+      <!-- Texto Rev. Manuel Bellorín -->
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Directora Movimiento Cristiano Final El Salvador."
+          android:textSize="16sp"
+          android:layout_marginTop="8dp"
+          android:gravity="center" />
+
+
+
+
+
+    </LinearLayout>
+  </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
