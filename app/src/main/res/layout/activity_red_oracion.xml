@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".RedOracion">
+
+    <!-- ScrollView para contener el contenido -->
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Logo en la parte superior -->
+            <Button
+                android:id="@+id/logobtn"
+                android:layout_width="55dp"
+                android:layout_height="59dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="20dp"
+                android:foreground="@drawable/logo"
+                android:scaleType="fitCenter"
+                android:src="@drawable/logo"
+                app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <!-- Título -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Red De Oración Internacional"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:paddingTop="16dp" />
+
+            <!-- Primer párrafo -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="La red de oración del ministerio MCF-Ministery es un proyecto más para orar por todas las personas que están pasando momentos malos en este mundo, todos aquellos problemas y dificultades que las agobian, este es el propósito de orar, para que Dios nos pueda dar fortaleza en este tiempo tan difícil que vivimos."
+                android:justificationMode="inter_word"
+                android:textSize="16sp"
+                android:paddingTop="8dp" />
+
+            <!-- Segundo párrafo -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Una oración puede ser una petición que se le dirige hacia Dios. Es una forma en que las personas comunican sus pensamientos, sentimientos y deseos a un poder superior y buscan orientación, consuelo y fortaleza."
+                android:justificationMode="inter_word"
+                android:textSize="16sp"
+                android:paddingTop="8dp" />
+
+            <!-- Tercer párrafo -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Muchas religiones y prácticas espirituales diferentes tienen sus propias formas únicas de oración, pero el hilo común es la creencia en una presencia divina que puede escuchar y responder a nuestras peticiones conforme a sus estatutos."
+                android:justificationMode="inter_word"
+                android:textSize="16sp"
+                android:paddingTop="8dp" />
+
+            <ImageView
+                android:id="@+id/pray"
+                android:layout_width="351dp"
+                android:layout_height="264dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/pray"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/address"
+                tools:ignore="MissingConstraints" />
+
+
+            <!-- Subtítulo -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¿Qué es la Red De Oración Internacional?"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingTop="16dp" />
+
+            <!-- Cuarto párrafo -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Los días lunes se levanta un gran pueblo de Dios unido en un solo espíritu, en una sola fe y en un solo clamor en oración a nivel mundial, pidiendo por las necesidades de la iglesia cristiana y de todas aquellas personas que están pasando por momentos tristes, difíciles y que solicitan oración a este ministerio."
+                android:justificationMode="inter_word"
+                android:textSize="16sp"
+                android:paddingTop="8dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
