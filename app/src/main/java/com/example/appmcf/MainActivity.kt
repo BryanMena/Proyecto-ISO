@@ -26,6 +26,14 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        btnEditorial.setOnClickListener {
+            val intent = Intent(this, Reflexiones::class.java)
+            startActivity(intent)
+        }
 
+        btnContacto.setOnClickListener {
+            val intent = Intent(this, Contacto::class.java)
+            startActivity(intent)
+        }
     }
 }
