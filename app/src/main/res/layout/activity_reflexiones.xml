@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:foregroundTint="#000000">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:clipToPadding="false"
+        android:foregroundTint="#673AB7"
+        tools:context=".Reflexiones"
+        tools:ignore="WebViewLayout">
+
+        <Button
+            android:id="@+id/logobtn"
+            android:layout_width="55dp"
+            android:layout_height="59dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="61dp"
+            android:foreground="@drawable/logo"
+            android:scaleType="fitCenter"
+
+            android:src="@drawable/logo"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+        <!-- Botones centrados en la misma línea -->
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="136dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/imagen1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints">
+
+            <Button
+                android:id="@+id/Reflexionbtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#ffffff"
+                android:text="Reflexiones"
+                android:textColor="#000000"
+                app:rippleColor="#9C27B0" />
+
+
+            <Button
+                android:id="@+id/Devocionalesbtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_weight="1"
+                android:backgroundTint="#000000"
+                android:text="Devocionales"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/imagen1"
+            android:layout_width="222dp"
+            android:layout_height="112dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/reflexion"
+            app:layout_constraintBottom_toTopOf="@+id/title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.454"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="24dp"
+            android:text="Reflexión Frases de Dios"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imagen1" />
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="15dp"
+            android:text="¿Se ha preguntado alguna vez acerca de la existencia de Dios? Esta reflexión le invita a explorar sus creencias cristianas y a profundizar a su relación con lo divino.\n\nPara que puedas saber porque buscas en un libro o internet 'Reflexión' es debido a que quiere mejorar su nivel de capacidad intelectual y su conducta hacia a todo lo que le rodea, esto incluye animales, cosas y especialmente a humanos.\n\nEste día es el día mejor indicado para reflexionar, antes que todo es necesario saber el concepto de reflexión.\n\n¿Qué es una reflexión?\nUna reflexión es algo relativo a la meditación y al razonamiento, que se logra a través de consejos y ejemplos de situaciones que pueden ser malas o buenas, con el objetivo de razonar, concientizar y llegar a conclusiones que ayuden a una persona.\n\n¿Qué es una reflexión Cristiana?\nEn el caso de una reflexión cristianas las situaciones y los consejos vienen primeramente de la biblia, y segundo las experiencias de motivación que las personas han pasado que pueden servir como ayuda a los demás cristianos, para esto es importante que tu puedas también por lo menos dedicar un tiempo para reflexionar.\n\nImportancia de una reflexión\nEl acto de reflexionar sobre la propia fe es crucial para los cristianos, ya que permite una comprensión más profunda y una conexión con Dios.\n\nA través de la reflexión, las personas pueden examinar sus creencias, acciones y relación con Dios, lo que les lleva al crecimiento personal y al desarrollo espiritual. También permite una mayor apreciación de las enseñanzas de Jesús y la Biblia, y cómo se pueden aplicar a la vida diaria.\n\nEn última instancia, la reflexión cristiana ayuda a las personas a vivir una vida más satisfactoria y con un propósito de acuerdo con la voluntad de Dios.\n\n"
+            app:layout_constraintBottom_toTopOf="@+id/video"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title" />
+
+        <WebView
+            android:id="@+id/video"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/content" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

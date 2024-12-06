@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        tools:context=".Devocionales">
+
+        <!-- Botones centrados en la misma línea -->
+
+        <!-- Nueva imagen -->
+
+        <!-- Texto Devocionales -->
+
+        <Button
+            android:id="@+id/logobtn"
+            android:layout_width="55dp"
+            android:layout_height="59dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:foreground="@drawable/logo"
+            android:scaleType="fitCenter"
+            android:src="@drawable/logo"
+            app:layout_constraintBottom_toBottomOf="@+id/title3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="57dp"
+            android:layout_marginBottom="32dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/imagen1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/logobtn"
+            tools:ignore="MissingConstraints">
+
+            <Button
+                android:id="@+id/Reflexionbtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#000000"
+                android:text="Reflexiones"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/Devocionalesbtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_weight="1"
+                android:backgroundTint="#ffffff"
+                android:text="Devocionales"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imagen1"
+            android:layout_width="406dp"
+            android:layout_height="206dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/devocional"
+            app:layout_constraintBottom_toTopOf="@+id/title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.454"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="Devocionales"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imagen1" />
+
+        <!-- Descripción -->
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:text="Muchos cristianos ahora en día hablan acerca de los devocionales, pero rara vez se conocen el concepto. Un devocional se deriva de la palabra devoción y devoto; es decir, puede ser algo dedicado a Dios, en el caso de un devocional cristiano, es el resultado del amor que se tiene hacia el."
+            android:justificationMode="inter_word"
+            android:textAlignment="center"
+            app:layout_constraintTop_toBottomOf="@id/title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Devocionales Cristianos -->
+        <TextView
+            android:id="@+id/title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="Devocionales Cristianos"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/description" />
+
+        <TextView
+            android:id="@+id/devocionales_cristianos"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:text="Los devocionales cristianos familiares son una excelente manera de unir a su familia y fortalecer su fe. Estos devocionales pueden incluir leer y discutir pasajes de la Biblia, orar juntos y compartir experiencias y reflexiones personales.\n\nAl hacer tiempo para los devocionales familiares, puede crear un sentido más profundo de conexión y crecimiento espiritual dentro de su hogar."
+            android:justificationMode="inter_word"
+            android:textAlignment="center"
+            app:layout_constraintTop_toBottomOf="@id/title2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- ¿Qué es un devocional? -->
+        <TextView
+            android:id="@+id/title3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="¿Qué es un devocional?"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/devocionales_cristianos" />
+
+        <TextView
+            android:id="@+id/que_es_devocional"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:text="Devocionales cristianos son prácticas diarias de oración y meditación en la fe cristiana. Estos devocionales pueden incluir la lectura de la Biblia, la reflexión sobre pasajes bíblicos, la oración y la adoración.\n\nLos devocionales cristianos son una forma de fortalecer la relación con Dios y crecer en la fe. Hay una variedad de recursos disponibles para los devocionales cristianos, desde libros y aplicaciones hasta grupos de estudio y servicios religiosos."
+            android:justificationMode="inter_word"
+            android:textAlignment="center"
+            app:layout_constraintTop_toBottomOf="@id/title3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Importancia de un devocional cristiano -->
+        <TextView
+            android:id="@+id/title4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="Importancia de un devocional cristiano"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/que_es_devocional" />
+
+        <TextView
+            android:id="@+id/importancia_devocional"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:text="Los devocionales cristianos son una herramienta importante para el crecimiento personal y espiritual de los creyentes. A través de la lectura de la Biblia y la reflexión sobre sus enseñanzas, los devocionales ayudan a fortalecer la fe y a profundizar en la relación con Dios.\n\nAdemás, los devocionales pueden ser una fuente de inspiración y motivación para enfrentar los desafíos de la vida cotidiana desde una perspectiva cristiana. En resumen, los devocionales cristianos son una práctica esencial para aquellos que buscan crecer en su fe y en su vida personal."
+            android:justificationMode="inter_word"
+            android:textAlignment="center"
+            app:layout_constraintTop_toBottomOf="@id/title4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- El resultado de una devoción en la iglesia -->
+        <TextView
+            android:id="@+id/title5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="El resultado de una devoción en la iglesia"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/importancia_devocional" />
+
+        <TextView
+            android:id="@+id/result_devocion"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:text="La devoción cristiana es una parte importante de la vida de la iglesia. Estos momentos de reflexión y oración ayudan a los miembros a conectarse con Dios y entre ellos.\n\nLos devocionales pueden ser realizados en grupo o individualmente, y pueden incluir lecturas de la Biblia, cantos de alabanza, y meditaciones. Además, dichas devociones pueden ser una forma efectiva de fortalecer la confianza y la relación siempre con Dios."
+            android:justificationMode="inter_word"
+            android:textAlignment="center"
+            app:layout_constraintTop_toBottomOf="@id/title5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
